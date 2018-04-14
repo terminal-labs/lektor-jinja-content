@@ -1,6 +1,6 @@
 # lektor-jinja-content
 
-This is a Lektor plugin that provides allows you to render jinja inside your content fields that are string-like. For example, this means that inside your content fields that are of type string or Markdown, you can write jinja logic, and access Lektor's [Template Context](https://www.getlektor.com/docs/templates/#template-context).
+This is a Lektor plugin that allows you to render jinja inside your content fields that are string-like. For example, this means that inside your content fields that are of type string or Markdown, you can write jinja logic, and access Lektor's [Template Context](https://www.getlektor.com/docs/templates/#template-context).
 
 Querying context:
 - `{{ site }}`
