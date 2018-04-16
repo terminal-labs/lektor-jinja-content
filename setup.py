@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='lektor-jinja-content',
-    version='0.1',
+    version='0.2',
     author='Terminal Labs, Joseph Nix',
     author_email='solutions@terminallabs.com',
     url='https://github.com/terminal-labs/lektor-jinja-content',
