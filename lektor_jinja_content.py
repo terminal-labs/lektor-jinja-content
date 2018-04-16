@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from jinja2.exceptions import TemplateSyntaxError, UndefinedError
 
-from lektor.context import get_ctx
 from lektor.db import Page
 from lektor.pluginsystem import Plugin
 
