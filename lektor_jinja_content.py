@@ -23,7 +23,7 @@ class JinjaContentPlugin(Plugin):
             raise
         return data
 
-    def on_before_build(self, builder, build_state, source, prog):
+    def on_before_build(self, builder, build_state, source, prog, **extra):
         pad = builder.pad
         if isinstance(prog.source, Page): # skips non-page Records and Assets
             for field in prog.source._data.keys():
