@@ -1,0 +1,31 @@
+title: About this Website
+---
+body:
+
+This is a website that was initally made with the Lektor quickstart, and then modified by a human by edits to contain many quick examples of Lektor's various functionalities.
+dafdafds
+111 {{ this.path }} 222
+---
+text_field:
+
+#### text ####
+text: {{ this.path }} 333
+----
+html: <b>{{ this.path }} 444</b>
+----
+markdown: * {{ this.path }} 555
+----
+text_and_html_field:
+
+##### text_and_html #####
+text: {{ this.path }} 666
+-----
+html: <i>{{ this.path }} 777</i>
+#### text ####
+text: 
+----
+html: <b><i>{{ this.path }} 888</i></b>
+----
+markdown: 
+----
+text_and_html_field: 

@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+  <h2>{{ this.title }}</h2>
+  body = {{ this.body }}
+  <br><br>
+  dict keys = {{ this.__dict__.keys() }}
+  <br><br>
+  _data = {{ this._data }}
+  <br><br>
+  _blocks = {{ this._blocks }}
+  {% for block in this.text_field.blocks %}
+    <br><br>
+    {{ block.text }}
+    {{ block.html }}
+    {{ block.markdown }}
+    {% for nested_block in block.text_and_html_field.blocks %}
+      <br><br>
+      {{ nested_block.text }}
+      {{ nested_block.html }}
+      {{ nested_block.markdown }}
+    {% endfor %}
+  {% endfor %}
+{% endblock %}
