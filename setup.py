@@ -42,7 +42,7 @@ setup(
     py_modules=["lektor_jinja_content"],
     tests_require=dev_require,
     url="https://github.com/terminal-labs/lektor-jinja-content",
-    version="0.3",
+    version="0.4",
     classifiers=[
         "Environment :: Plugins",
         "Environment :: Web Environment",
