@@ -3,8 +3,10 @@ import os
 test_strings = [
     "<p>In Jinja!",
     "<p>this = /</p>",
-    "<p>site.root.__dict__.keys() = dict_keys([",
-    "<p>config.values = {'IMAGEMAGICK_EXECUTABLE':",
+    "page_num",
+    "_bound_data",
+    "_data",
+    "'IMAGEMAGICK_EXECUTABLE': None",
     "<p>alt = _primary</p>",
     "<p>math = 2 + 2 = 4</p>",
     "<b>{% if True %}~raw~{% endif %}</b>",
