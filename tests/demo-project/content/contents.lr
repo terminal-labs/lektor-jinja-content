@@ -1,0 +1,37 @@
+html:
+
+<p>{{ "In Jinja!" }} Now here's a use of the Template Context:</p>
+<p>this.path = {{ this.path }}</p>
+<p>site.root.__dict__.keys() = {{ site.root.__dict__.keys() }}</p>
+<p>config.values = {{ config.values }}</p>
+<p>alt = {{ alt }}</p>
+<p>math = 2 + 2 = {{ 2+ 2 }}</p>
+---
+flowA:
+
+#### flow1 ####
+text:
+
+{% if False %}
+False!
+{% endif %}
+----
+html:
+
+<p>
+{% raw %}
+<b>{% if True %}~raw~{% endif %}</b>
+{% endraw %}
+</p>
+----
+markdown:
+
+* {% set name = "Jinja Content" %}{{ name }}
+* {{ name|sort|join("") }}
+----
+flowB:
+
+##### flow2 #####
+string: {{ 'This is in a nested flowblock.'}}
+##### flow2 #####
+string: Something commented out in Jinja: {# Not visible! #}

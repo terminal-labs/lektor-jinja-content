@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    {{ this.html }}
+    {% for block in this.flowA.blocks %}
+      {{ block.text }}
+      {{ block.html }}
+      {{ block.markdown }}
+      {% for nested_block in block.flowB.blocks %}
+        {{ nested_block.string }}
+      {% endfor %}
+    {% endfor %}
+  </body>
+</html>
