@@ -1,7 +1,7 @@
 # lektor-jinja-content
 
-[![Build Status](https://api.travis-ci.org//terminal-labs/lektor-jinja-content.svg?branch=master)](https://travis-ci.org//terminal-labs/lektor-jinja-content)
-[![Code Coverage](https://codecov.io/gh//terminal-labs/lektor-jinja-content/branch/master/graph/badge.svg)](https://codecov.io/gh//terminal-labs/lektor-jinja-content)
+[![Build Status](https://api.travis-ci.org/terminal-labs/lektor-jinja-content.svg?branch=master)](https://travis-ci.org//terminal-labs/lektor-jinja-content)
+[![Code Coverage](https://codecov.io/gh/terminal-labs/lektor-jinja-content/branch/master/graph/badge.svg)](https://codecov.io/gh//terminal-labs/lektor-jinja-content)
 [![PyPI version](https://badge.fury.io/py/lektor-jinja-content.svg)](https://pypi.org/project/lektor-jinja-content/)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/lektor-jinja-content.svg)](https://pypi.org/project/lektor-jinja-content/)
 <a href="https://github.com/ambv/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
