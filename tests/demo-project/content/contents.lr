@@ -1,31 +1,37 @@
-title: About this Website
+html:
+
+<p>{{ "In Jinja!" }} Now here's a use of the Template Context:</p>
+<p>this = {{ this.path }}</p>
+<p>site.root.__dict__.keys() = {{ site.root.__dict__.keys() }}</p>
+<p>config.values = {{ config.values }}</p>
+<p>alt = {{ alt }}</p>
+<p>math = 2 + 2 = {{ 2+ 2 }}</p>
 ---
-body:
+flowA:
 
-This is a website that was initally made with the Lektor quickstart, and then modified by a human by edits to contain many quick examples of Lektor's various functionalities.
-dafdafds
-111 {{ this.path }} 222
----
-text_field:
+#### flow1 ####
+text:
 
-#### text ####
-text: {{ this.path }} 333
+{% if False %}
+Not Visible!
+{% endif %}
 ----
-html: <b>{{ this.path }} 444</b>
-----
-markdown: * {{ this.path }} 555
-----
-text_and_html_field:
+html:
 
-##### text_and_html #####
-text: {{ this.path }} 666
------
-html: <i>{{ this.path }} 777</i>
-#### text ####
-text: 
+<p>
+{% raw %}
+<b>{% if True %}~raw~{% endif %}</b>
+{% endraw %}
+</p>
 ----
-html: <b><i>{{ this.path }} 888</i></b>
+markdown:
+
+* {% set name = "Jinja Content" %}{{ name }}
+* {{ name|sort|join("") }}
 ----
-markdown: 
-----
-text_and_html_field: 
+flowB:
+
+##### flow2 #####
+string: This is in a nested flowblock. {{ this._data }}
+##### flow2 #####
+string: Something commented out in Jinja: {# Not visible! #}

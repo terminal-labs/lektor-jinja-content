@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from jinja2.exceptions import UndefinedError
+from markupsafe import Markup
 
 from lektor.pluginsystem import Plugin
 
@@ -24,6 +25,8 @@ class JinjaContentPlugin(Plugin):
     def process_field(self, context, field):
         if self.safe_hasattr(field, "source"):  # Markdown
             field.source = self.render_as_jinja(context, field.source)
+        elif type(field) == Markup:
+            field = Markup(self.render_as_jinja(context, field))
         else:  # Assumed to be String-like.
             field = self.render_as_jinja(context, field)
         return field

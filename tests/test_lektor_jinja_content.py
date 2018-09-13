@@ -1,17 +1,24 @@
 import os
 
-import flask
-from lektor.context import Context
-
-app = flask.Flask(__name__)
+test_strings = [
+    "<p>In Jinja!",
+    "<p>this = /</p>",
+    "<p>site.root.__dict__.keys() = dict_keys([",
+    "<p>config.values = {'IMAGEMAGICK_EXECUTABLE':",
+    "<p>alt = _primary</p>",
+    "<p>math = 2 + 2 = 4</p>",
+    "<b>{% if True %}~raw~{% endif %}</b>",
+    "<li>Jinja Content</li>",
+    "<li>aCeiJjnnnott</li>",
+    "This is in a nested flowblock.",
+]
 
 
 def test_builder(pad, builder):
     failures = builder.build_all()
     assert not failures
+    page_path = os.path.join(builder.destination_path, "index.html")
+    html = open(page_path).read()
 
-    def get_page(tag):
-        path = os.path.join(builder.destination_path,
-                            'blog/tag/%s/index.html' % tag)
-
-        return open(path).read().strip()
+    for string in test_strings:
+        assert string in html
