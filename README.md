@@ -48,8 +48,7 @@ Try running the [test site](https://github.com/terminal-labs/lektor-jinja-conten
 This Plugin opens the door to some pretty powerful and pretty funky functionality. Here's some food for though:
 
 * Currently every every string-like field in `_data` and `_blocks` is processed, even things like `_slug` and `_template`. Can these other things be used?
-* [Some people want to be able to include markdown in content files / declarations](https://github.com/lektor/lektor/issues/541). This plugin might pave the way toward that.
+* [Some people want to be able to include markdown in content files / declarations](https://github.com/lektor/lektor/issues/541). This plugin might pave the way toward that with [includes and extends](https://github.com/terminal-labs/lektor-jinja-content/issues/3).
 * Could we Jinjaify static files?
 * [Databags?](https://github.com/terminal-labs/lektor-jinja-content/issues/4)
 * [What about modularity?](https://github.com/terminal-labs/lektor-jinja-content/issues/2)
-* How can we use [includes and extends](https://github.com/terminal-labs/lektor-jinja-content/issues/3)?

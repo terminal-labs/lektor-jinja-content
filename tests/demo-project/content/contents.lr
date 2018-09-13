@@ -1,7 +1,7 @@
 html:
 
 <p>{{ "In Jinja!" }} Now here's a use of the Template Context:</p>
-<p>this = {{ this.path }}</p>
+<p>this.path = {{ this.path }}</p>
 <p>site.root.__dict__.keys() = {{ site.root.__dict__.keys() }}</p>
 <p>config.values = {{ config.values }}</p>
 <p>alt = {{ alt }}</p>
@@ -13,7 +13,7 @@ flowA:
 text:
 
 {% if False %}
-Not Visible!
+False!
 {% endif %}
 ----
 html:
@@ -32,6 +32,6 @@ markdown:
 flowB:
 
 ##### flow2 #####
-string: This is in a nested flowblock. {{ this._data }}
+string: {{ 'This is in a nested flowblock.'}}
 ##### flow2 #####
 string: Something commented out in Jinja: {# Not visible! #}

@@ -17,6 +17,7 @@ install:
   - travis_retry pip install --upgrade pytest
   - travis_retry pip install --upgrade codecov
   - travis_retry pip install --editable .[dev]
+  - pip list
 
 
 script: make coverage
