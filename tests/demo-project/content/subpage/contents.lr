@@ -1,6 +1,3 @@
 _model: tagged
 ---
-tags:
-
-tag1
-tag2
+tags: tag
