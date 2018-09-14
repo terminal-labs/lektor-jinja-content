@@ -3,4 +3,6 @@ name = Demo Project
 url = http://x.com
 
 [packages]
-lektor-jinja-content
+lektor-jinja-content =
+lektor-tags =
+lektor-rst =
