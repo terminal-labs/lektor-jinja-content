@@ -9,6 +9,7 @@ root_positive_strings = [
     "'IMAGEMAGICK_EXECUTABLE': None",
     "<p>alt = _primary</p>",
     "<p>math = 2 + 2 = 4</p>",
+    '<p>Rst: <a class="reference external" href="./">link text</a></p>',
     "<b>{% if True %}~raw~{% endif %}</b>",
     "<li>Jinja Content</li>",
     "<li>aCeiJjnnnott</li>",
