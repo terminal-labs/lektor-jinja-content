@@ -10,5 +10,27 @@
         {{ nested_block.string }}
       {% endfor %}
     {% endfor %}
+
+    <ul>
+      Tags:
+      {% for t in this.tags %}
+        <li>
+          <a href="{{ ('/' ~ t.lower())|url }}">
+            {{ t }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <ul>
+      Children:
+      {% for child in this.children %}
+        <li>
+          <a href="{{ child|url }}">
+            {{ child.path }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
   </body>
 </html>

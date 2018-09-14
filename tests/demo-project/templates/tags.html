@@ -1,0 +1,9 @@
+<b>Tag: {{ this.tag }}</b>
+<b>Items:</b>
+<ul>
+  {% for i in this.items %}
+    <li><a href="{{ i|url }}">{{ i._id }}</a></li>
+  {% else %}
+    <li><em>No items.</em></li>
+  {% endfor %}
+</ul>

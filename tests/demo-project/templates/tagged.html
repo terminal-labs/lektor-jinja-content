@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <ul>
+      Tags:
+      {% for t in this.tags %}
+        <li>
+          <a href="{{ ('/' ~ t.lower())|url }}">
+            All posts tagged {{ t }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

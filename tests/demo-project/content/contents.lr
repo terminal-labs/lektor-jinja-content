@@ -35,3 +35,8 @@ flowB:
 string: {{ 'This is in a nested flowblock.'}}
 ##### flow2 #####
 string: Something commented out in Jinja: {# Not visible! #}
+---
+tags:
+
+tag1
+tag2
