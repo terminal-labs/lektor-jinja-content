@@ -1,6 +1,11 @@
 # Changelog
 
-## 0.4 (September 13, 2018)
+## 0.4.2 (September 14, 2018)
+
+* Fix compatibility with lektor-tags
+* Add tests for lektor-tags and lektor-rst
+
+## 0.4.1 (September 13, 2018)
 
 * README link fix.
 
