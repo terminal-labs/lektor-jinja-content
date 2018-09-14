@@ -43,7 +43,8 @@ class JinjaContentPlugin(Plugin):
         return blocks
 
     def on_process_template_context(self, context, **extra):
-        if not extra["template"]:  # Only be triggered by page evaluation.
+        # Only be triggered by page evaluation with _data attibute.
+        if not extra["template"] or not hasattr(context["this"], "_data"):
             return
 
         for field in context["this"]._data.keys():
