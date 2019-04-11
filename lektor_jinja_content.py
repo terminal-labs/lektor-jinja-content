@@ -54,6 +54,9 @@ class JinjaContentPlugin(Plugin):
                     context, context["this"]._data[field]._blocks
                 )
             else:
-                context["this"]._data[field] = self.process_field(
-                    context, context["this"]._data[field]
-                )
+                if field_val:
+                    context["this"]._data[field] = self.process_field(
+                        context, context["this"]._data[field]
+                    )
+                else:
+                    return ''

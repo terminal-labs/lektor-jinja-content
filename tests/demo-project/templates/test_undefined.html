@@ -1,0 +1,6 @@
+test_undefined
+{% extends "test_undefined_layout.html" %}
+{% block meta_title %}{{ this.meta_title or this.title }}{% endblock %}
+{% block body %}
+  {{ this.body }}
+{% endblock %}
