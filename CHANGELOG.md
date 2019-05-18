@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.3 (May 18, 2019)
+
+* Ensure universal builds.
+
 ## 0.4.2 (September 14, 2018)
 
 * Fix compatibility with lektor-tags
