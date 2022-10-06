@@ -24,9 +24,9 @@ dev_require = [
     "pytest-mock",
     "pytest-click",
     "pytest-pylint",
+    # installed for testing. See https://github.com/terminal-labs/lektor-jinja-content/issues/15
+    "lektor",
 ]
-if sys.version_info >= (3, 6, 0):
-    dev_require.append("black")
 
 setup(
     author="Terminal Labs, Joseph Nix",
@@ -41,7 +41,7 @@ setup(
     py_modules=["lektor_jinja_content"],
     tests_require=dev_require,
     url="https://github.com/terminal-labs/lektor-jinja-content",
-    version="0.4.3",
+    version="0.4.4",
     classifiers=[
         "Environment :: Plugins",
         "Environment :: Web Environment",
@@ -50,11 +50,11 @@ setup(
         "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.5",
-        "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
