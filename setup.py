@@ -33,7 +33,6 @@ setup(
     author_email="solutions@terminallabs.com",
     description=description,
     extras_require={"dev": dev_require},
-    install_requires=["Lektor"],
     keywords="Lektor plugin static-site jinja jinja2",
     license="BSD-3-Clause",
     long_description=readme,
